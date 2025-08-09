@@ -6,6 +6,8 @@
   --link-color: #00f7a4;
 }
 
+
+
 body {
   background-color: var(--background-color);
   color: var(--text-color);
@@ -35,12 +37,19 @@ body {
   color: var(--text-color);
   text-decoration: none;
   cursor: pointer;
+  padding: 10px;
 }
 .active {
   color: var(--link-color);
+  background-color: rgb(0, 65, 35);
+  padding: 10px;
+  border-radius: 15px;
   font-weight: bold;
   text-decoration: underline;
   text-decoration-color: var(--link-color);
+}
+.active a{
+  color: black;
 }
 .navbar ul li a:hover {
   color: var(--link-color);
@@ -69,6 +78,12 @@ li {
   margin-right: 5rem;
   font-size: 1rem;
   font-weight: 700;
+  cursor: pointer;
+  transition: 0.5s ease-in;
+}
+.btn button:hover{
+  color: rgb(255, 255, 255);
+  background-color: #002e26;
 }
 
 /* HOME LANDING PAGE STARTS HERE */
@@ -139,7 +154,14 @@ li {
   border: none;
   border-radius: 15px;
   margin-left: 50px;
+  cursor: pointer;
+  transition: all .3s ease-in;
 }
+.butns button:hover{
+  color: rgb(255, 255, 255);
+  background-color: #002e26;
+}
+
 /* HOME LANDING PAGE ENDS HERE */
 
 /* Image part starts here */
@@ -457,6 +479,7 @@ li {
   width: 100%;
   background-color: #002e26;
   padding-bottom: 20px;
+  margin-top: -20px;
 }
 
 .footer-tag p{
