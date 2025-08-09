@@ -6,6 +6,8 @@
   --link-color: #00f7a4;
 }
 
+
+
 body {
   background-color: var(--background-color);
   color: var(--text-color);
@@ -35,12 +37,19 @@ body {
   color: var(--text-color);
   text-decoration: none;
   cursor: pointer;
+  padding: 10px;
 }
 .active {
   color: var(--link-color);
+  background-color: rgb(0, 65, 35);
+  padding: 10px;
+  border-radius: 15px;
   font-weight: bold;
   text-decoration: underline;
   text-decoration-color: var(--link-color);
+}
+.active a{
+  color: black;
 }
 .navbar ul li a:hover {
   color: var(--link-color);
@@ -69,6 +78,12 @@ li {
   margin-right: 5rem;
   font-size: 1rem;
   font-weight: 700;
+  cursor: pointer;
+  transition: 0.5s ease-in;
+}
+.btn button:hover{
+  color: rgb(255, 255, 255);
+  background-color: #002e26;
 }
 
 /* HOME LANDING PAGE STARTS HERE */
@@ -105,8 +120,18 @@ li {
 .head-image img{
   width: 700px;
   border-radius: 50px;
+  animation: pointdown 2s infinite alternate-reverse;
 }
 
+@keyframes pointdown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(26px);
+  }
+  
+}
 
 
 .home-heading h1{
@@ -128,7 +153,15 @@ li {
   font-weight: 600;
   border: none;
   border-radius: 15px;
+  margin-left: 50px;
+  cursor: pointer;
+  transition: all .3s ease-in;
 }
+.butns button:hover{
+  color: rgb(255, 255, 255);
+  background-color: #002e26;
+}
+
 /* HOME LANDING PAGE ENDS HERE */
 
 /* Image part starts here */
@@ -165,6 +198,116 @@ li {
   width: 80%;
 }
 /* Image part ends here */
+
+/* Exchange rate starts here */
+.exchange-rate {
+  margin: 50px 0 50px 0;
+}
+.exchange-rate-head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.exchange-rate-head h1{
+  font-size: 48px;
+  color: var(--link-color);
+}
+.exchange-rate-head p{
+  font-size: 24px;
+}
+.exchange-table tr {
+  border-radius: 50px;
+}
+
+.exchange-rate-table {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.exchange-rate-table table {
+  width: 80%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.exchange-rate-table th,
+.exchange-rate-table td {
+  padding: 8px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.exchange-rate-table th {
+  background-color: var(--link-color);
+  font-weight: 700;
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+
+}
+.exchange-rate-table td {
+  border-bottom: 1px solid #ddd;
+  background-color: var(--background-color);
+  font-size: 20px;
+  height: 50px;
+  font-weight: 700;
+}
+
+
+
+
+.exchange-rate-table td {
+      position: relative;
+      padding: 15px 30px;
+      font-size: 18px;
+      color: white;
+      background: transparent;
+      cursor: pointer;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .exchange-rate-table td::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 0%;
+      background: #00f0ff;
+      z-index: -1;
+      transition: height 0.4s ease;
+    }
+
+    .exchange-rate-table td:hover::before {
+      height: 100%;
+    }
+
+    .exchange-rate-table td:hover {
+      color: #000;
+    }
+
+
+.exchange-rate-table img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.exchange-rate-table h2 {
+  color: var(--link-color);
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+.exchange-rate-table p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+
+
+
+/* Exchange rate ends here */
 
 /* ICON BOX STARTS HERE */
 
@@ -250,3 +393,157 @@ li {
   padding: 0 30px 0 20px;
 }
 /* ICON BOX ENDS HERE */
+
+/* image icon box starts here */
+
+.image-iconBox{
+  height: auto;
+}
+
+.img-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header-box h1{
+  font-size: 48px;
+  color: var(--link-color);
+}
+.header-box p{
+  font-size: 20px;
+  margin-top: -30px;
+}
+
+.image-iconBox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 100px;
+}
+.img-box img{
+  width: 600px;
+  border-radius: 20px;
+  margin-top: 70px;
+}
+.icons-fullBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.iconsBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+}
+
+.icon-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem;
+}
+.icon-box img{
+  width: 40px;
+}
+.imageicon-text{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+.imageicon-text h1{
+  font-size: 24px;
+  color: var(--link-color);
+}
+.imageicon-text p{
+  font-size: 16px;
+  margin-top: -20px;
+}
+/* image icon box ends here */
+/* CSS For footer starts here */
+.footer-tag{
+  width: 100%;
+  background-color: #002e26;
+  padding-bottom: 20px;
+  margin-top: -20px;
+}
+
+.footer-tag p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-tag .divider{
+  width: 90%;
+  margin-left: 100px;
+}
+ .footers{
+  width: 100%;
+  background-color: #002e26;
+  margin-top: 100px;
+  border-radius: 20px 20px 0 0;
+  height: 40vh;
+}
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem;
+}
+.divider{
+  height: 2px;
+  background-color: var(--link-color);
+  margin: 20px 0;
+}
+
+.footer-logo{
+  width: 500px;
+}
+.footer-logo img {
+  width: 300px;
+}
+.footer-inks{
+  width: 200px;
+  
+}
+.footer-inks ul li{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  margin-left: -35px;
+}
+
+
+.footer-inks ul li a{
+  
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+
+ .footer-contact {
+  top: 0;
+  margin-top: -85px;
+} 
+
+
+
+
+/* CSS For footer ens here */
