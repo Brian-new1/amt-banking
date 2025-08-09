@@ -1,0 +1,219 @@
+:root {
+  --primary-color: #3855e8;
+  --secondary-color: #002aff;
+  --background-color: #0d1312;
+  --text-color: #ffffff;
+  --link-color: #00f7a4;
+}
+
+
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.nav {
+  width: 100%;
+  background-color: rgb(41, 41, 41);
+  border-bottom-right-radius: 4rem;
+  border-bottom-left-radius: 4rem;
+  z-index: 10;
+ 
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo {
+  width: 16rem;
+}
+.navbar ul li a {
+  color: var(--text-color);
+  text-decoration: none;
+  cursor: pointer;
+  padding: 10px;
+}
+.active {
+  color: var(--link-color);
+  background-color: rgb(0, 65, 35);
+  padding: 10px;
+  border-radius: 15px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: var(--link-color);
+}
+.active a{
+  color: black;
+}
+.navbar ul li a:hover {
+  color: var(--link-color);
+}
+li {
+  list-style: none;
+}
+
+.nav-link {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn button {
+  background-color: var(--link-color);
+  color: var(--background-color);
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  margin-right: 5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.5s ease-in;
+}
+.btn button:hover{
+  color: rgb(255, 255, 255);
+  background-color: #002e26;
+}
+
+/* End  */
+/* FAQ;s section starts here */
+.faq-section {
+    max-width: 800px;
+    margin: auto;
+    background: var(--background-color);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+
+  .faq-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white;
+  }
+
+  .faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+  }
+
+  .faq-question {
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    background-color: var(--background-color);
+  }
+
+  .faq-question:hover {
+    color: #ffffff;
+  }
+
+  .faq-answer {
+    display: none;
+    margin-top: 10px;
+    color: #c2c2c2;
+    line-height: 1.6;
+  }
+
+  .faq-item.active .faq-answer {
+    display: block;
+   
+  }
+
+  .faq-icon {
+    font-size: 1.2rem;
+    transition: transform 0.3s;
+  }
+
+  .faq-item.active .faq-icon {
+    transform: rotate(45deg);
+  }
+/* FAQ;s section ends here */
+/* CSS For footer starts here */
+.footer-tag{
+  width: 100%;
+  background-color: #002e26;
+  padding-bottom: 20px;
+  margin-top: -20px;
+}
+
+.footer-tag p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-tag .divider{
+  width: 90%;
+  margin-left: 100px;
+}
+ .footers{
+  width: 100%;
+  background-color: #002e26;
+  margin-top: 100px;
+  border-radius: 20px 20px 0 0;
+  height: 40vh;
+}
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem;
+}
+.divider{
+  height: 2px;
+  background-color: var(--link-color);
+  margin: 20px 0;
+}
+
+.footer-logo{
+  width: 500px;
+}
+.footer-logo img {
+  width: 300px;
+}
+.footer-inks{
+  width: 200px;
+  
+}
+.footer-inks ul li{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  margin-left: -35px;
+}
+
+
+.footer-inks ul li a{
+  
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+
+ .footer-contact {
+  top: 0;
+  margin-top: -85px;
+} 
+
+
+
+
+/* CSS For footer ens here */
