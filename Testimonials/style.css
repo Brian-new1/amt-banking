@@ -12,7 +12,7 @@ body {
 }
 
 .nav {
-  width: ;
+  width: 100%;
   background-color: rgb(41, 41, 41);
   border-bottom-right-radius: 4rem;
   border-bottom-left-radius: 4rem;
@@ -71,7 +71,7 @@ li {
 /* Testimonials Section */
 .testimonials {
   padding: 50px 20px;
-  background-color: #0d1321; /* Light virgo background for a clean look */
+  background-color: var(--background-color); /* Light virgo background for a clean look */
   text-align: center;
 }
 
