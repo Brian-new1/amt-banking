@@ -6,8 +6,6 @@
   --link-color: #00f7a4;
 }
 
-
-
 body {
   background-color: var(--background-color);
   color: var(--text-color);
@@ -19,7 +17,6 @@ body {
   border-bottom-right-radius: 4rem;
   border-bottom-left-radius: 4rem;
   z-index: 10;
- 
 }
 
 .navbar {
@@ -48,7 +45,7 @@ body {
   text-decoration: underline;
   text-decoration-color: var(--link-color);
 }
-.active a{
+.active a {
   color: black;
 }
 .navbar ul li a:hover {
@@ -81,7 +78,7 @@ li {
   cursor: pointer;
   transition: 0.5s ease-in;
 }
-.btn button:hover{
+.btn button:hover {
   color: rgb(255, 255, 255);
   background-color: #002e26;
 }
@@ -91,33 +88,30 @@ li {
   margin-top: -60px;
   position: relative;
   width: 100%;
-  
 }
 
-.landing-page{
+.landing-page {
   width: 95%;
   background-size: cover;
   height: 100vh;
   position: relative;
   z-index: 1;
-
-  
 }
-.landing-page{
-   padding-left: 30px;
+.landing-page {
+  padding-left: 30px;
   padding-right: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
 }
-.box{
+.box {
   width: 50%;
 }
-.head-image{
+.head-image {
   width: 50%;
 }
-.head-image img{
+.head-image img {
   width: 700px;
   border-radius: 50px;
   animation: pointdown 2s infinite alternate-reverse;
@@ -130,22 +124,24 @@ li {
   100% {
     transform: translateY(26px);
   }
-  
 }
 
-
-.home-heading h1{
+.home-heading h1 {
   color: #fff;
   font-size: 4rem;
 }
 .home-heading span {
-  color: var(--link-color);
+  background: linear-gradient(90deg, #1eff05, #0011ff); /* gradient colors */
+  -webkit-background-clip: text; /* for Chrome, Safari */
+  -webkit-text-fill-color: transparent; /* hide actual text color */
+  background-clip: text; /* standard property */
+  color: transparent; /* fallback */
 }
 .home-p p {
   font-size: 18px;
 }
 
-.butns button{
+.butns button {
   background-color: var(--link-color);
   color: black;
   padding: 10px 30px 10px 30px;
@@ -155,9 +151,9 @@ li {
   border-radius: 15px;
   margin-left: 50px;
   cursor: pointer;
-  transition: all .3s ease-in;
+  transition: all 0.3s ease-in;
 }
-.butns button:hover{
+.butns button:hover {
   color: rgb(255, 255, 255);
   background-color: #002e26;
 }
@@ -165,7 +161,7 @@ li {
 /* HOME LANDING PAGE ENDS HERE */
 
 /* Image part starts here */
-.image-part{
+.image-part {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -173,22 +169,28 @@ li {
   gap: 3rem;
 }
 
-.img-part-text{
+.img-part-text {
   display: flex;
-  justify-content:center;
-  align-items: start;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   width: 35%;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 20px;
+  height: 330px;
+  box-shadow: 0px 0px 30px rgba(0, 255, 132, 0.5),
+    0 30px 60px rgba(0, 64, 255, 0.5);
 }
-.img-part-text .first-head{
+.img-part-text .first-head {
   font-size: 20px;
   color: var(--link-color);
 }
-.img-part-text h1{
+.img-part-text h1 {
   font-size: 28px;
   font-weight: 600;
 }
-.img-part-text p{
+.img-part-text p {
   font-size: 18px;
   font-weight: 500;
 }
@@ -203,17 +205,17 @@ li {
 .exchange-rate {
   margin: 50px 0 50px 0;
 }
-.exchange-rate-head{
+.exchange-rate-head {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.exchange-rate-head h1{
+.exchange-rate-head h1 {
   font-size: 48px;
   color: var(--link-color);
 }
-.exchange-rate-head p{
+.exchange-rate-head p {
   font-size: 24px;
 }
 .exchange-table tr {
@@ -243,7 +245,6 @@ li {
   font-weight: 700;
   font-size: 24px;
   color: rgb(0, 0, 0);
-
 }
 .exchange-rate-table td {
   border-bottom: 1px solid #ddd;
@@ -253,40 +254,36 @@ li {
   font-weight: 700;
 }
 
-
-
-
 .exchange-rate-table td {
-      position: relative;
-      padding: 15px 30px;
-      font-size: 18px;
-      color: white;
-      background: transparent;
-      cursor: pointer;
-      overflow: hidden;
-      z-index: 1;
-    }
+  position: relative;
+  padding: 15px 30px;
+  font-size: 18px;
+  color: white;
+  background: transparent;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+}
 
-    .exchange-rate-table td::before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 0%;
-      background: #00f0ff;
-      z-index: -1;
-      transition: height 0.4s ease;
-    }
+.exchange-rate-table td::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #00f0ff;
+  z-index: -1;
+  transition: height 0.4s ease;
+}
 
-    .exchange-rate-table td:hover::before {
-      height: 100%;
-    }
+.exchange-rate-table td:hover::before {
+  height: 100%;
+}
 
-    .exchange-rate-table td:hover {
-      color: #000;
-    }
-
+.exchange-rate-table td:hover {
+  color: #000;
+}
 
 .exchange-rate-table img {
   width: 30px;
@@ -304,39 +301,35 @@ li {
   margin-bottom: 20px;
 }
 
-
-
-
 /* Exchange rate ends here */
 
 /* ICON BOX STARTS HERE */
 
-.icon-section{
+.icon-section {
   padding: 0 100px 0 100px;
 }
-.icon-headBox{
+.icon-headBox {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 100%;
   margin-top: 100px;
-  
 }
 
-.icon-headBox h1{
+.icon-headBox h1 {
   font-size: 32px;
   font-weight: 600;
   color: var(--link-color);
 }
 
-.head-box{
+.head-box {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.head-box h2{
+.head-box h2 {
   margin-top: -20px;
   font-size: 64px;
   font-weight: 600;
@@ -347,7 +340,7 @@ li {
   font-size: 64px;
   font-weight: 600;
 }
-.icons-box{
+.icons-box {
   margin-top: 50px;
   display: flex;
   justify-content: space-between;
@@ -368,9 +361,8 @@ li {
   flex-direction: column;
   border-radius: 15px;
   transition: all 0.3s ease;
-
 }
-.iconbox:hover{
+.iconbox:hover {
   box-shadow: 4px 0px 10px var(--link-color);
   transform: translateY(-10px);
 }
@@ -383,41 +375,40 @@ li {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
 }
 
-.icon-text h1{
+.icon-text h1 {
   font-size: 24px;
 }
-.icon-text p{
+.icon-text p {
   padding: 0 30px 0 20px;
 }
 /* ICON BOX ENDS HERE */
 
 /* image icon box starts here */
 
-.image-iconBox{
+.image-iconBox {
   height: auto;
 }
 
-.img-box{
+.img-box {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.header-box{
+.header-box {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.header-box h1{
+.header-box h1 {
   font-size: 48px;
   color: var(--link-color);
 }
-.header-box p{
+.header-box p {
   font-size: 20px;
   margin-top: -30px;
 }
@@ -430,18 +421,18 @@ li {
   width: 100%;
   margin-top: 100px;
 }
-.img-box img{
+.img-box img {
   width: 600px;
   border-radius: 20px;
   margin-top: 70px;
 }
-.icons-fullBox{
+.icons-fullBox {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.iconsBox{
+.iconsBox {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -449,79 +440,78 @@ li {
   width: 70%;
 }
 
-.icon-box{
+.icon-box {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   gap: 2rem;
 }
-.icon-box img{
+.icon-box img {
   width: 40px;
 }
-.imageicon-text{
+.imageicon-text {
   display: flex;
   justify-content: center;
   align-items: start;
   flex-direction: column;
 }
-.imageicon-text h1{
+.imageicon-text h1 {
   font-size: 24px;
   color: var(--link-color);
 }
-.imageicon-text p{
+.imageicon-text p {
   font-size: 16px;
   margin-top: -20px;
 }
 /* image icon box ends here */
 /* CSS For footer starts here */
-.footer-tag{
+.footer-tag {
   width: 100%;
   background-color: #002e26;
   padding-bottom: 20px;
   margin-top: -20px;
 }
 
-.footer-tag p{
+.footer-tag p {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.footer-tag .divider{
+.footer-tag .divider {
   width: 90%;
   margin-left: 100px;
 }
- .footers{
+.footers {
   width: 100%;
   background-color: #002e26;
   margin-top: 100px;
   border-radius: 20px 20px 0 0;
   height: 40vh;
 }
-.footer{
+.footer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   gap: 2rem;
 }
-.divider{
+.divider {
   height: 2px;
   background-color: var(--link-color);
   margin: 20px 0;
 }
 
-.footer-logo{
+.footer-logo {
   width: 500px;
 }
 .footer-logo img {
   width: 300px;
 }
-.footer-inks{
+.footer-inks {
   width: 200px;
-  
 }
-.footer-inks ul li{
+.footer-inks ul li {
   display: flex;
   justify-content: center;
   align-items: start;
@@ -529,21 +519,15 @@ li {
   margin-left: -35px;
 }
 
-
-.footer-inks ul li a{
-  
+.footer-inks ul li a {
   color: white;
   text-decoration: none;
   font-size: 18px;
 }
 
-
- .footer-contact {
+.footer-contact {
   top: 0;
   margin-top: -85px;
-} 
-
-
-
+}
 
 /* CSS For footer ens here */
