@@ -1,0 +1,33 @@
+
+   Account & Access
+
+Q1: How do i open an online banking account?
+
+You can open an account by clicking the "Sign In" button on our Home page and following the registration  process. You'll need a valid ID , proof of address, and your account information.
+
+Q2: I forgot my password. How do i reset it?
+
+Click "Forgot password"  on the Login page and follow the instructions. A password reset link will be sent to your registration email address.
+
+Q3: How can i update my personal information?
+
+Log in to your account, go to "Settings" or "Profile", and edit your personal details. For changes like your phone number or email address, we may ask for verification.
+
+   Security and Privacy
+
+Q4: How secure is my online banking information:
+
+We use advanced encyption protocols (SSL) , firewalls, and two- factor Authentication (2FA) to ensure your data is protected at all times.
+
+Q5: What should i do if i notice suspicious activity on my account?
+
+
+Immediately contact our support team and change your password. We'll help you investigate and secure your account.
+
+Q6: Do you do two factor authentification(2FA) ?
+
+Yes 2FA adds an extra layer of protection to your login by requiring a verification code sent to your email address or SMS.
+
+
+
+Q7: 
