@@ -7,7 +7,6 @@
 
     <!-- Links -->
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="../Home/style.css" />
   </head>
   <body>
     <!-- NavBar starts here -->
@@ -22,8 +21,8 @@
             <li><a href="../ABOUT US PAGE/About us.html">About Us</a></li>
             <li><a href="../SERVICES/Service page.html">Services</a></li>
             <li><a href="../Partnership/partners.html">Partners</a></li>
-            <li class="active"><a href="#">Testimonials</a></li>
-            <li><a href="../FAQ's/index1.html">FAQ's</a></li>
+            <li class="active"><a href="index.html">Testimonials</a></li>
+            <li><a href="../FAQ's/faq1.html">FAQ's</a></li>
             <li><a href="../ContactUs/index.html">Contact Us</a></li>
           </ul>
         </div>
@@ -39,13 +38,11 @@
       <div class="testimonial-container">
         <div class="testimonial">
           <div class="testimonial-header">
-            <img
-              src="C:\Users\Maxwell\Desktop\AMT- Testimonials\images\Jane Doe.jpg"
-              alt="Customer Photo"
-            />
+            <img src="images/Jane Doe.jpg" alt="Customer Photo" />
             <div class="customer-info">
-              <h3>Jane Doe</h3>
+              <h3>Felicia Anna</h3>
               <p>Small Business Owner</p>
+              <div class="rating">★★★★★</div>
             </div>
           </div>
           <p class="testimonial-text">
@@ -57,13 +54,11 @@
 
         <div class="testimonial">
           <div class="testimonial-header">
-            <img
-              src="C:\Users\Maxwell\Downloads\TEST\Testimonials\John Smith.jpg"
-              alt="Customer Photo"
-            />
+            <img src="images/John Smith.jpg" alt="Customer Photo" />
             <div class="customer-info">
-              <h3>John Smith</h3>
+              <h3>Kalain Smith</h3>
               <p>Freelance Consultant</p>
+              <div class="rating">★★★★★</div>
             </div>
           </div>
           <p class="testimonial-text">
@@ -75,13 +70,11 @@
 
         <div class="testimonial">
           <div class="testimonial-header">
-            <img
-              src="C:\Users\Maxwell\Desktop\AMT- Testimonials\images\Emily Chen.jpg"
-              alt="Customer Photo"
-            />
+            <img src="images/Emily Chen.jpg" alt="Customer Photo" />
             <div class="customer-info">
               <h3>Emily Chen</h3>
               <p>Tech Entrepreneur</p>
+              <div class="rating">★★★★★</div>
             </div>
           </div>
           <p class="testimonial-text">
@@ -90,10 +83,92 @@
             banking solution."
           </p>
         </div>
+        <div class="testimonial">
+          <div class="testimonial-header">
+            <img src="images/Miliva.jpg" alt="Customer Photo" />
+            <div class="customer-info">
+              <h3>Nya Miliva</h3>
+              <p>Business Owner</p>
+              <div class="rating">★★★</div>
+            </div>
+          </div>
+          <p class="testimonial-text">
+            "Being a member of this bank has helped me go about my bills more
+            conviniently and hasstle free"
+          </p>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-header">
+            <img src="images/Denzel.jpg" alt="Customer Photo" />
+            <div class="customer-info">
+              <h3>Kum John</h3>
+              <p>Real Estate Owner</p>
+              <div class="rating">★★★★★</div>
+            </div>
+          </div>
+          <p class="testimonial-text">
+            "Switching to this bank was the best decision for my business. I
+            deal with big figures daily, so this has gone a long way to help me
+            do secure transactions"
+          </p>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-header">
+            <img src="images/Maxwell.jpg" alt="Customer Photo" />
+            <div class="customer-info">
+              <h3>Neba Sebastien</h3>
+              <p>Small business Owner</p>
+              <div class="rating">★★★★</div>
+            </div>
+          </div>
+          <p class="testimonial-text">
+            "Best banking service I've used in West Africa ."
+          </p>
+        </div>
       </div>
+      <form class="review-form">
+        <h2>Add Your Review</h2>
+        <div class="rating-input">
+          <label for="rating">Your Rating:</label>
+          <div class="stars">
+            <input type="radio" id="star5" name="rating" value="5" /><label
+              for="star5"
+              title="5 stars"
+              >&#9733;</label
+            >
+            <input type="radio" id="star4" name="rating" value="4" /><label
+              for="star4"
+              title="4 stars"
+              >&#9733;</label
+            >
+            <input type="radio" id="star3" name="rating" value="3" /><label
+              for="star3"
+              title="3 stars"
+              >&#9733;</label
+            >
+            <input type="radio" id="star2" name="rating" value="2" /><label
+              for="star2"
+              title="2 stars"
+              >&#9733;</label
+            >
+            <input type="radio" id="star1" name="rating" value="1" /><label
+              for="star1"
+              title="1 star"
+              >&#9733;</label
+            >
+          </div>
+        </div>
+        <label for="review">Your Review:</label>
+        <textarea
+          id="review"
+          name="review"
+          rows="5"
+          placeholder="Write your review here..."
+        ></textarea>
+        <button type="submit">Submit Review</button>
+      </form>
     </section>
 
-    <!-- Footer Starts Here -->
     <section class="footers">
       <div class="footer">
         <div class="footer-logo">
@@ -161,6 +236,5 @@
         <p>copyright reserved by AMT tech group</p>
       </div>
     </section>
-    <!-- Footer Ends Here -->
   </body>
 </html>
