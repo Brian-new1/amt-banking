@@ -59,14 +59,20 @@ export async function getLoggedInUser() {
   }
 }
 
-export const logoutAccount = async () => {
+export const logoutAccount = async (): Promise<boolean> => {
   try {
     const { account } = await createSessionClient();
 
-    cookieStore().delete("appwrite-session");
-
+    // Delete the session from Appwrite
     await account.deleteSession("current");
+
+    // Clear the cookie
+    const cookieStore = cookies();
+    cookieStore.delete("appwrite-session");
+
+    return true;
   } catch (error) {
-    return null;
+    console.error("Logout failed:", error);
+    return false;
   }
 };
