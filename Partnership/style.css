@@ -9,23 +9,31 @@
 body {
   background-color: var(--background-color);
   color: var(--text-color);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-image: url("images/E\ BANK.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 2rem;
+  height: 15rem;
+  padding: 0.1rem;
 }
 
 .nav {
-  width: ;
+  width: 100%;
   background-color: rgb(41, 41, 41);
   border-bottom-right-radius: 4rem;
   border-bottom-left-radius: 4rem;
- position: sticky;
-    top: 0;
-    z-index: 100;
-
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
-
   align-items: center;
   gap: 2rem;
 }
@@ -33,20 +41,30 @@ body {
 .logo {
   width: 16rem;
 }
+
+.navbar ul {
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+}
+
 .navbar ul li a {
   color: var(--text-color);
   text-decoration: none;
   cursor: pointer;
 }
+
 .active {
   color: var(--link-color);
   font-weight: bold;
   text-decoration: underline;
   text-decoration-color: var(--link-color);
 }
+
 .navbar ul li a:hover {
   color: var(--link-color);
 }
+
 li {
   list-style: none;
 }
@@ -73,113 +91,89 @@ li {
   font-weight: 700;
 }
 
-
-
-/* Base Styles */
-body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    background-image: url("images/E\ BANK.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    border-radius: 2rem;
-    height: 15rem;
-    padding:0.1rem;
-
-
+.container {
+  padding: 2rem;
+}
 
 .container h2 {
-    align-items: center;
-    font-size: 40px;
-    color: #00f7a4;
-<<<<<<< HEAD
- position: relative;
-
-=======
-<<<<<<< HEAD
-   
-=======
-
-    position: relative;
->>>>>>> 2af7a313dc786f28dcad4613dd216f354b5f25bf
->>>>>>> b6edfd3575afc0fad50f395c10285dbb3c9d7efe
+  text-align: center;
+  font-size: 40px;
+  color: #00f7a4;
+  position: relative;
 }
-
 
 .grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
+
 .card {
-    flex: 1 1 calc(33% - 20px);
-    background: rgb(41, 41, 41);;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+  flex: 1 1 calc(33% - 20px);
+  background: rgb(41, 41, 41);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
+
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    cursor: wait;
-
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  cursor: wait;
 }
+
 .card img {
-    width: 100%;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
+
 .card h3 {
-    padding: 15px;
-    margin: 0;
-    font-size: 20px;
-    color: white;
+  padding: 15px;
+  margin: 0;
+  font-size: 20px;
+  color: white;
 }
+
 .card p {
-    color: white;
+  color: white;
+  padding: 0 15px 15px;
 }
 
-/* Hero Section  ends*/
-
+/* Partners Container */
 .partners-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-}
-
-
-.partners-hero {
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.partners-hero h1 {
-    font-size: 2.5rem;
-    color: rgb(239, 243, 241);
-    margin-bottom: 1rem;
-}
-
-.bank-name {
-    color: WHITE;
-}
-
-.subtitle {
-    font-size: 1.2rem;
-    color: white;;
-}
-/* Banks card */
-.partners-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-margin-top: 30px;
-
-
+  margin-top: 30px;
 }
+
+.partners-hero {
+  text-align: center;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.partners-hero h1 {
+  font-size: 2.5rem;
+  color: rgb(239, 243, 241);
+  margin-bottom: 1rem;
+}
+
+.bank-name {
+  color: WHITE;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: white;
+}
+
+/* Banks card */
 .partners {
   width: 300px;
   background-color: #0d1312;
@@ -188,74 +182,108 @@ margin-top: 30px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
+
 .partners:hover {
   transform: translateY(-8px);
-  box-shadow: 0 8px 20px;
-  color: (0,0,0, 0.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
-.partners img{
-  width: 100%;
-  height:180px;
-  object-fit: cover;
 
+.partners img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.partners-content {
+  padding: 1rem;
 }
 
 /* Benefits Grid */
 .benefits-section {
-    margin: 4rem 0;
+  margin: 4rem 0;
+  width: 100%;
 }
 
 .benefits-section h2 {
-    text-align: center;
-    color: #00f7a4;
-    margin-bottom: 2rem;
-    position: relative;
-  
+  text-align: center;
+  color: #00f7a4;
+  margin-bottom: 2rem;
+  position: relative;
 }
-* who can partner *
 
-* 🤝 Partner Types */
+.benefits {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: none;
+  color: #fff;
+  cursor: crosshair;
+}
 
-.join_section{
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.benefit-card {
+  background: rgb(41, 41, 41);
+  padding: 2rem;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 2px solid transparent;
+}
+
+.benefit-card i {
+  font-size: 2rem;
+  color: #00f7a4;
+  margin-bottom: 1rem;
+}
+
+.benefit-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.benefit-card p {
+  font-size: 0.95rem;
+  color: #c5c6c7;
+}
+
+.benefit-card:hover {
+  border-color: #00f7a4;
+  transform: translateY(-6px);
+}
+
+/* Partner Types Section */
+.join_section {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  gap: 2rem;
+  margin: 4rem 0;
 }
 
-.join_section {
-    width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  gap:2rem;
-  
-}
-
-.partner-types i {
-  color: white;
-}
-
-.partners {
+.partner-types {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding: 60px 40px;
-background: linear-gradient( 135deg, lab(0% 0 0 / 0.522), #0203032b);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.522), #0203032b);
   color: #ffffff;
-  margin-bottom: 80px; /* space before next section */
+  margin-bottom: 80px;
   margin-top: 100px;
   width: 40%;
   max-height: 10%;
-  border: var(--link-color)  3px solid;
-  
+  border: var(--link-color) 3px solid;
 }
+
 .partners-text {
-  /* flex: 1; */
-  width: 400%;
+  width: 100%;
   padding-right: 40px;
 }
 
@@ -280,7 +308,7 @@ background: linear-gradient( 135deg, lab(0% 0 0 / 0.522), #0203032b);
 
 .partners-text ul li i {
   margin-right: 10px;
-  color:#00f7a4; /* accent color for icons */
+  color: #00f7a4;
 }
 
 .partners-image {
@@ -290,10 +318,10 @@ background: linear-gradient( 135deg, lab(0% 0 0 / 0.522), #0203032b);
 }
 
 .partners-image img {
-  max-width: 10%;
+  max-width: 100%;
   height: auto;
   border-radius: 12px;
-  opacity: 0.7; /* transparent before hover */
+  opacity: 0.7;
   transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
 }
 
@@ -302,143 +330,40 @@ background: linear-gradient( 135deg, lab(0% 0 0 / 0.522), #0203032b);
   transform: scale(1.05);
 }
 
-.partners-text {
-  flex: 1;
-  padding-right: 20px;
-}
-.partners-image img {
-  max-width: 80%;
-  height: auto;
-  border-radius: 12px;
-
-  /* transparency effect */
-  opacity: 0.6;
-  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
-}
-
-/* Hover effect */
-.partners-image img:hover {
-  opacity: 1;              /* full visible */
-  transform: scale(1.05);  /* subtle zoom */
-}
-
-/* who can partner ends */
-
-
-
-
-
-
-/* benefits grid*/
-
-.benefits {
-  text-align: center;
-  padding: 4rem 2rem;
-  background: none;
-  color: #fff;
-  cursor: crosshair;
-  /* transparency effect */
-  opacity: 0.6;
-  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
-  /* Hover effect */
-  opacity: 1;              /* full visible */
-  transform: scale(1.05);  /* subtle zoom */
-}
-
-.benefits-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-  border: #00f7a4;
-}
-
-.benefit-card {
-  background: rgb(41, 41, 41);
-  padding: 2rem;
-  border-radius: 12px;
-  transition: transform 0.3s, box-shadow 0.3s;
-  border: #00f7a4;
-}
-
-.benefit-card i {
-  font-size: 2rem;
-  color: #00f7a4;
-  margin-bottom: 1rem;
-}
-
-.benefit-card h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
-
-.benefit-card p {
-  font-size: 0.95rem;
-  color: #c5c6c7;
-}
-
-<<<<<<< HEAD
-  .benefit-card {
-  border: 2px solid transparent;
-  transition: all 0.3s ease;
-}
-
-.benefit-card:hover {
-  border-color: #00f7a4;
-  transform: translateY(-6px);
-}
-/*benefits grid ends*/
-
-
-/* What people say */
+/* Testimonials */
 .testimonials {
   background: black;
   padding: 4rem 2rem;
   text-align: center;
   border-radius: 1.5rem;
-  height: 10%;
-  margin-top: 80px;
-  margin-bottom: 10px;
-  width: 40%;
-  border: var(--link-color)  3px solid;
-  border-radius: 12px;
+  margin: 80px auto;
+  width: 80%;
+  border: var(--link-color) 3px solid;
 }
 
+.testimonials h2 {
+  color: #00f7a4;
+  margin-bottom: 2rem;
+}
 
-.testimonials  p {
+.testimonials p {
   color: white;
-
 }
+
 .testimonial-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 0.5rem;
+  gap: 1.5rem;
   margin-top: 2rem;
-  
-
-.partners-types h2 {
-    color: #00f7a4;
-    margin-bottom: 1.5rem;
-    text-align: center;
-    position: relative;
-}
-
-
-
-.partners-list {
-    list-style: none;
-    padding: 0;
 }
 
 .testimonial {
-  background:rgb(41, 41, 41);
+  background: rgb(41, 41, 41);
   padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   position: relative;
   font-style: italic;
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 .testimonial::before {
@@ -449,34 +374,22 @@ background: linear-gradient( 135deg, lab(0% 0 0 / 0.522), #0203032b);
   top: -10px;
   left: 15px;
 }
+
 .testimonial span {
   display: block;
   margin-top: 1rem;
   font-weight: bold;
   color: #f6f1f1;
-
-
-  /* transparency effect */
-  opacity: 0.6; 
-  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
-/* Hover effect */
-  opacity: 1;           /* full visible */
-  transform: scale(1.05);  /* subtle zoom */
+  font-style: normal;
 }
 
-
-
-
-
-
-/* 📌 FAQ Section */
+/* FAQ Section */
 .partner-faq {
   padding: 5rem 2rem;
   background: none;
   text-align: center;
   border-radius: 1.5rem;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 2rem auto;
 }
 
 .partner-faq h2 {
@@ -499,11 +412,11 @@ background: linear-gradient( 135deg, lab(0% 0 0 / 0.522), #0203032b);
   margin-bottom: 1rem;
   padding: 1.5rem;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
-  cursor: crosshair;
+  cursor: pointer;
   position: relative;
-  border: var(--link-color)  3px solid;
+  border: var(--link-color) 3px solid;
 }
 
 .partner-faq li strong {
@@ -516,18 +429,16 @@ background: linear-gradient( 135deg, lab(0% 0 0 / 0.522), #0203032b);
 
 .partner-faq li p {
   margin: 0;
-  color: #555;
+  color: #c5c6c7;
   font-size: 0.95rem;
   line-height: 1.6;
 }
 
-/* Hover & Active States */
 .partner-faq li:hover {
   transform: translateY(-4px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
-/* Optional: Add arrow icon effect */
 .partner-faq li::after {
   content: "▼";
   font-size: 0.9rem;
@@ -542,85 +453,55 @@ background: linear-gradient( 135deg, lab(0% 0 0 / 0.522), #0203032b);
   transform: rotate(180deg);
 }
 
-
-
-.bank2 {
-  width: 30%;
-  height: 20%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  gap: 0.5rem;
-  
-}
-
-
-
 /* CTA Section */
 .cta-section {
-
-    text-align: center;
-    padding: 0.5rem 0;
+  text-align: center;
+  padding: 3rem 0;
+  width: 100%;
 }
+
 .cta-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3rem; /* space between items */
+  gap: 3rem;
   margin-top: 1rem;
 }
 
 .bank-img {
-  width: 50%;   /* adjust size */
+  width: 50%;
   height: auto;
   border-radius: 16px;
-  border:  #00f7a4;
+  border: 2px solid #00f7a4;
 }
-.cta-section h2 {
-    color: #00f7a4;
-    margin-bottom: 1rem;
-}
-.cta-section p {
-    color: white;
 
+.cta-section h2 {
+  color: #00f7a4;
+  margin-bottom: 1rem;
 }
+
+.cta-section p {
+  color: white;
+  margin-bottom: 2rem;
+}
+
 .cta-button {
-    background:rgb(41, 41, 41);
-    color: white;
-    padding: 1rem 2rem;
-    font-size: 1.1rem;
-    border-radius: 8rem;
-    cursor: pointer;
-    transition: background 0.3s ease;
+  background: rgb(41, 41, 41);
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 8rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border: none;
 }
 
 .cta-button:hover {
-    background:#00f7a4 ;
+  background: #00f7a4;
+  color: var(--background-color);
 }
 
-/* Responsive Adjustments */
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> b6edfd3575afc0fad50f395c10285dbb3c9d7efe
-@media (max-width: 768px) {
-    .partners-hero h1 {
-        font-size: 2rem;
-    }
-    
-    .benefits-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-
-
-
-
-
-/* Modal starts here */
-
+/* Modal */
 .modal {
   display: none;
   position: fixed;
@@ -652,8 +533,6 @@ background: linear-gradient( 135deg, lab(0% 0 0 / 0.522), #0203032b);
   cursor: pointer;
   z-index: 1000;
 }
-/* modal ends here */
-
 
 .popup {
   position: fixed;
@@ -668,107 +547,82 @@ background: linear-gradient( 135deg, lab(0% 0 0 / 0.522), #0203032b);
   z-index: 9999;
 }
 
-
-
-
-
-
-
-
-<<<<<<< HEAD
-/* Base (Desktop First Design) */
-body {
-  font-family: "Poppins", sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-}
-
-/* 🖥 Large Screens (default) */
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 2rem;
-}
-
-/* 📱 Tablets & Small Laptops */
+/* Responsive Adjustments */
 @media (max-width: 1024px) {
   .navbar ul {
     gap: 1rem;
   }
-
-  .hero h1 {
+  
+  .partners-hero h1 {
     font-size: 2rem;
   }
-
+  
   .benefits-grid, .testimonial-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .join_section {
+    flex-direction: column;
+  }
+  
+  .partner-types {
+    width: 80%;
   }
 }
 
-/* 📱 Mobile (Portrait) */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
     align-items: center;
   }
-
+  
   .navbar ul {
     flex-direction: column;
     text-align: center;
+    gap: 0.5rem;
   }
-
-  .hero {
-    text-align: center;
-    padding: 3rem 1rem;
+  
+  .btn button {
+    margin-right: 0;
+    margin-top: 1rem;
   }
-
+  
   .benefits-grid, .testimonial-grid {
-    grid-template-columns: 1fr; /* 1 column on mobile */
+    grid-template-columns: 1fr;
   }
-
-  .cta-button {
-    width: 100%;
-    padding: 1rem;
-    font-size: 1.1rem;
+  
+  .cta-wrapper {
+    flex-direction: column;
+  }
+  
+  .bank-img {
+    width: 80%;
+  }
+  
+  .partner-types {
+    width: 90%;
+    padding: 30px 20px;
+  }
+  
+  .testimonials {
+    width: 90%;
   }
 }
 
-/* 📱 Extra Small Screens (Phones under 480px) */
 @media (max-width: 480px) {
   body {
     font-size: 0.9rem;
   }
-
-  .hero h1 {
-    font-size: 1.5rem;
+  
+  .partners-hero h1 {
+    font-size: 1.8rem;
   }
-
+  
   .benefit-card, .testimonial {
     padding: 1rem;
   }
-
-  .navbar ul {
-    gap: 0.5rem;
+  
+  .card {
+    flex: 1 1 100%;
   }
 }
-=======
->>>>>>> b6edfd3575afc0fad50f395c10285dbb3c9d7efe
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-=======
->>>>>>> 2af7a313dc786f28dcad4613dd216f354b5f25bf
