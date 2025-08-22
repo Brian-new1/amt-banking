@@ -88,7 +88,10 @@ body {
     border-radius: 2rem;
     height: 15rem;
     padding:0.1rem;
+<<<<<<< HEAD
     
+=======
+>>>>>>> b6edfd3575afc0fad50f395c10285dbb3c9d7efe
 }
 
 
@@ -96,8 +99,17 @@ body {
     align-items: center;
     font-size: 40px;
     color: #00f7a4;
+<<<<<<< HEAD
  position: relative;
 
+=======
+<<<<<<< HEAD
+   
+=======
+
+    position: relative;
+>>>>>>> 2af7a313dc786f28dcad4613dd216f354b5f25bf
+>>>>>>> b6edfd3575afc0fad50f395c10285dbb3c9d7efe
 }
 
 
@@ -192,6 +204,24 @@ margin-top: 30px;
 
 }
 
+<<<<<<< HEAD
+=======
+/* Benefits Grid */
+.benefits-section {
+    margin: 4rem 0;
+}
+
+.benefits-section h2 {
+    text-align: center;
+    color: #00f7a4;
+    margin-bottom: 2rem;
+<<<<<<< HEAD
+=======
+    position: relative;
+>>>>>>> 2af7a313dc786f28dcad4613dd216f354b5f25bf
+    
+}
+>>>>>>> b6edfd3575afc0fad50f395c10285dbb3c9d7efe
 
 
 /* who can partner */
@@ -359,6 +389,7 @@ background: linear-gradient( 135deg, lab(0% 0 0 / 0.522), #0203032b);
   color: #c5c6c7;
 }
 
+<<<<<<< HEAD
   .benefit-card {
   border: 2px solid transparent;
   transition: all 0.3s ease;
@@ -396,6 +427,25 @@ background: linear-gradient( 135deg, lab(0% 0 0 / 0.522), #0203032b);
   gap: 0.5rem;
   margin-top: 2rem;
   
+=======
+.partners-types h2 {
+    color: #00f7a4;
+    margin-bottom: 1.5rem;
+    text-align: center;
+<<<<<<< HEAD
+
+}
+    
+=======
+    position: relative;
+}
+
+
+>>>>>>> 2af7a313dc786f28dcad4613dd216f354b5f25bf
+.partners-list {
+    list-style: none;
+    padding: 0;
+>>>>>>> b6edfd3575afc0fad50f395c10285dbb3c9d7efe
 }
 
 .testimonial {
@@ -568,6 +618,10 @@ background: linear-gradient( 135deg, lab(0% 0 0 / 0.522), #0203032b);
 }
 
 /* Responsive Adjustments */
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b6edfd3575afc0fad50f395c10285dbb3c9d7efe
 @media (max-width: 768px) {
     .partners-hero h1 {
         font-size: 2rem;
@@ -639,6 +693,7 @@ background: linear-gradient( 135deg, lab(0% 0 0 / 0.522), #0203032b);
 
 
 
+<<<<<<< HEAD
 /* Base (Desktop First Design) */
 body {
   font-family: "Poppins", sans-serif;
@@ -715,6 +770,8 @@ body {
     gap: 0.5rem;
   }
 }
+=======
+>>>>>>> b6edfd3575afc0fad50f395c10285dbb3c9d7efe
 
 
 
