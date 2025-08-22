@@ -88,11 +88,7 @@ body {
     border-radius: 2rem;
     height: 15rem;
     padding:0.1rem;
-<<<<<<< HEAD
-    
-=======
->>>>>>> b6edfd3575afc0fad50f395c10285dbb3c9d7efe
-}
+
 
 
 .container h2 {
@@ -204,8 +200,6 @@ margin-top: 30px;
 
 }
 
-<<<<<<< HEAD
-=======
 /* Benefits Grid */
 .benefits-section {
     margin: 4rem 0;
@@ -215,16 +209,10 @@ margin-top: 30px;
     text-align: center;
     color: #00f7a4;
     margin-bottom: 2rem;
-<<<<<<< HEAD
-=======
     position: relative;
->>>>>>> 2af7a313dc786f28dcad4613dd216f354b5f25bf
-    
+  
 }
->>>>>>> b6edfd3575afc0fad50f395c10285dbb3c9d7efe
-
-
-/* who can partner */
+* who can partner *
 
 * 🤝 Partner Types */
 
@@ -427,25 +415,19 @@ background: linear-gradient( 135deg, lab(0% 0 0 / 0.522), #0203032b);
   gap: 0.5rem;
   margin-top: 2rem;
   
-=======
+
 .partners-types h2 {
     color: #00f7a4;
     margin-bottom: 1.5rem;
     text-align: center;
-<<<<<<< HEAD
-
-}
-    
-=======
     position: relative;
 }
 
 
->>>>>>> 2af7a313dc786f28dcad4613dd216f354b5f25bf
+
 .partners-list {
     list-style: none;
     padding: 0;
->>>>>>> b6edfd3575afc0fad50f395c10285dbb3c9d7efe
 }
 
 .testimonial {
