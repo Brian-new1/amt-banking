@@ -16,13 +16,14 @@ const RightSideBar = ({ user, transactions, banks }: RightSidebarProps) => {
           <div className="absolute left-1/2 top-[80px] transform -translate-x-1/2">
             <div className="w-24 h-24 rounded-full bg-gray-100 flex items-center justify-center border-8 border-white shadow-lg">
               <span className="text-4xl font-bold text-blue-500">
-                {user?.name?.[0] ?? "?"}
+                {user?.firstName?.[0] ?? "?"}
               </span>
             </div>
           </div>
           <div className="absolute left-1/2 bottom-[-30px] transform -translate-x-1/2 w-full px-4 text-center">
             <h1 className="text-xl font-bold text-gray-900">
-              {user?.name ?? "Guest"}
+              {user?.firstName ?? "Guest"}
+              {user.lastName}
             </h1>
             <p className="text-sm text-gray-500">
               {user?.email ?? "No email available"}
@@ -59,7 +60,7 @@ const RightSideBar = ({ user, transactions, banks }: RightSidebarProps) => {
                 <BankCard
                   key={banks[0].$id}
                   account={banks[0]}
-                  userName={user.name}
+                  userName={`${user.firstName} ${user.lastName}`}
                   showBalance={false}
                 />
               </div>
@@ -68,7 +69,7 @@ const RightSideBar = ({ user, transactions, banks }: RightSidebarProps) => {
                   <BankCard
                     key={banks[1].$id}
                     account={banks[1]}
-                    userName={user.name}
+                    userName={`${user.firstName} ${user.lastName}`}
                     showBalance={false}
                   />
                 </div>
