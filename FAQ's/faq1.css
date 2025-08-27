@@ -1,3 +1,9 @@
+:root {
+  
+  --link-color: #00f7a4;
+}
+
+
 
 body { 
     font-family: Arial, sans-serif; 
@@ -45,6 +51,15 @@ body {
     align-items: center;
     justify-content: center;
 }
+.faq-header{
+  padding-left: 60px;
+  color: var(--link-color);
+  font-family: 'roboto', sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+ padding-bottom: 50px;
+ margin-top: -40px;
+}
 
 .articles { 
     padding: 40px;
@@ -59,8 +74,9 @@ body {
     text-align: center;
     cursor: pointer;
     margin-bottom: 20px;
-    transition: transform 0.3s, box-shadow 0.3s;
-    border-radius: 8px;
+    transition: transform 0.3s;
+    
+  
 }
 
 .article img { 
@@ -68,6 +84,13 @@ body {
     height: 65%; 
     border-radius: 8px;
     transition: transform 0.3s, border 0.3s;
+    border-radius: 8px;
+    border-color: rgb(161, 161, 240);
+    border-width: 1px;
+    box-shadow: 4px 4px 10px var(--link-color);
+}
+.article h2{
+    color: var(--link-color);
 }
 
 .article:hover img {
@@ -91,7 +114,7 @@ body {
     display: block;
     margin-bottom: 20px;
     padding: 10px 15px;
-    background-color: #013e63;
+    background-color: var(--link-color);
     color: white;
     border: none;
     border-radius: 4px;
@@ -100,8 +123,9 @@ body {
 }
 
 #backButton:hover {
-    background-color: #025078;
+    background: #006022;
 }
+
 
 .faq-item { 
     border-bottom: 1px solid #ddd;
@@ -133,13 +157,13 @@ body {
 }
 
 .faq-item.open h3 {
-    color: #013e63;
+    color: var(--link-color);
     font-weight: bold;
 }
 
 .faq-item.open h3::after {
     content: "▲";
-    color: #013e63;
+    color: var(--link-color);
 }
 
 .faq-item p {
@@ -156,13 +180,15 @@ body {
 }
 
 .support-banner { 
-     background-color: rgb(41, 41, 41); 
+    background-color: rgb(41, 41, 41); 
     padding: 30px 20px; 
+    margin-bottom: -100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-left: 150px;
     padding-right: 150px;
+    border-radius: 20px 20px 0 0;
 } 
 
 .support-banner img { 
@@ -175,13 +201,14 @@ body {
 } 
 
 .support-banner .button { 
-    background-color: #013e63;
+    background-color:var(--link-color);
     color: white; 
     padding: 10px 20px; 
     border: none;
     border-radius: 4px;
     cursor: pointer; 
 }
+
 
 .search-results { 
     display: none; 
@@ -202,6 +229,122 @@ body {
     .support-banner .text { max-width: 100%; margin-bottom: 20px; }
 }
 
+/* CSS For footer starts here */
+.footer-tag {
+  width: 100%;
+  background-color: #002e26;
+  padding-bottom: 20px;
+  margin-top: -20px;
+}
+
+.footer-tag p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-tag .divider {
+  width: 90%;
+  margin-left: 100px;
+}
+.footers {
+  width: 100%;
+  background-color: #002e26;
+  margin-top: 100px;
+  
+  height: 40vh;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem;
+}
+.divider {
+  height: 2px;
+  background-color: var(--link-color);
+  margin: 20px 0;
+}
+
+.footer-logo {
+  width: 500px;
+}
+.footer-logo img {
+  width: 300px;
+}
+.footer-inks {
+  width: 200px;
+}
+.footer-inks ul li {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  margin-left: -35px;
+}
+
+.footer-inks ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.footer-contact {
+  top: 0;
+  margin-top: -85px;
+}
+
+@media (max-width: 992px) {
+  .footer {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .footer-logo img {
+    width: 200px;
+  }
+  .footer-inks ul li {
+    margin-left: 0;
+  }
+  .footer-inks ul li a {
+    font-size: 14px;
+  }
+  .footer-inks h1 {
+    font-size: 20px;
+  }
+  .footer-tag {
+    margin-top: -40px;
+  }
+  .footer-tag p {
+    font-size: 10px;
+  }
+}
+@media (max-width: 780px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    background-color: #002e26;
+  }
+  .footer-logo {
+    width: 100%;
+    text-align: center;
+  }
+  .footer-logo img {
+    width: 150px;
+  }
+  .footer-inks {
+    width: 100%;
+    text-align: center;
+  }
+  .footer-inks ul li a {
+    font-size: 12px;
+  }
+  .footer-tag {
+    display: none;
+  }
+}
+/* CSS For footer ens here */
 
 
 
