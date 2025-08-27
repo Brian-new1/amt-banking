@@ -11,7 +11,9 @@ import Footer from "./Footer";
 const SideBar = ({ user }: SiderbarProps) => {
   const pathname = usePathname();
   return (
-    <section className="bg-white rounded-xl shadow-md p-4 border border-gray-200 text-center align-center display-flex   hidden md:flex flex-col w-64 ">
+    <section className="bg-white rounded-xl shadow-md p-4 border border-gray-200 text-center hidden md:flex flex-col w-64 justify-between">
+      {/* 👆 Added justify-between so nav stays at the top and footer at the bottom */}
+
       <nav className="flex flex-col gap-4">
         <Link href="/" className="mb-12 cursor-pointer flex items-center gap-2">
           <Image
@@ -51,6 +53,8 @@ const SideBar = ({ user }: SiderbarProps) => {
         })}
         USER
       </nav>
+
+      {/* 👇 Footer is now forced to bottom */}
       <Footer user={user} />
     </section>
   );
