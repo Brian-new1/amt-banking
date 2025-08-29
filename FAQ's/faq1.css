@@ -102,6 +102,112 @@ body {
     transform: scale(1.05);
 }
 
+
+
+
+
+/* Button */
+.video-btn {
+  align-self: flex-start;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #1f2937;
+  background: var(--link-color);
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  transition: transform 0.08s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+.video-btn:hover { box-shadow: 0 8px 20px rgba(0,0,0,0.12); transform: translateY(-1px); }
+.video-btn:active { transform: translateY(0); }
+.video-btn:focus { outline: 3px solid #93c5fd; outline-offset: 2px; }
+
+/* Modal */
+.video-modal[aria-hidden="true"] { display: none; }
+
+.video-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+}
+
+.video-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+.video-modal__dialog {
+  position: relative;
+  max-width: 960px;
+  margin: 5vh auto;
+  background: #0b0f1a;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+  width: calc(100% - 2rem);
+  animation: modal-in 160ms ease-out;
+}
+
+.video-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+.video-modal__close {
+  background: transparent;
+  border: none;
+  color: #e5e7eb;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+}
+.video-modal__close:focus { outline: 3px solid #93c5fd; outline-offset: 2px; }
+
+.video-modal__body {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background: #000;
+}
+
+/* Media fills the container */
+.video-modal__body iframe,
+.video-modal__body video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+  background: #000;
+}
+
+/* Reduce motion respect */
+@media (prefers-reduced-motion: reduce) {
+  .video-btn { transition: none; }
+  .video-modal__dialog { animation: none; }
+}
+
+@keyframes modal-in {
+  from { transform: translateY(12px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+/* Small screens */
+@media (max-width: 480px) {
+  .faq-card { flex: 1 1 100%; }
+}
+
+
+
+
+
+
+
 .faq-section { 
     margin-top: -120px;
     padding: 40px;

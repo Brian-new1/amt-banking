@@ -10,19 +10,6 @@
 </head>
 <body>
  <!-- NavBar starts here -->
-  <script
-    src="//uae.fw-cdn.com/40279774/172800.js"
-    widgetId="7879194e-e045-4422-bf01-1c0cf20f93f0"
-  ></script>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Online Banking Support</title>
-    <link rel="stylesheet" href="faq1.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- NavBar starts here -->
     <section class="nav">
       <div class="navbar">
         <div class="logo">
@@ -30,13 +17,13 @@
         </div>
         <div class="nav-links">
           <ul class="nav-link">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Affiliate</a></li>
-            <li><a href="#">Testimonials</a></li>
-            <li><a href="#">FAQ's</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li class="active"><a href="../Home/index.html">Home</a></li>
+            <li><a href="../ABOUT US PAGE/About us.html">About Us</a></li>
+            <li><a href="../SERVICES/Service page.html">Services</a></li>
+            <li><a href="../Partnership/partners.html">Partnership</a></li>
+            <li><a href="../Testimonials/index.html">Testimonials</a></li>
+            <li><a href="../FAQ's/faq1.html">FAQ's</a></li>
+            <li><a href="../contact/contact us.html">Contact Us</a></li>
           </ul>
         </div>
         <div class="btn">
@@ -46,209 +33,192 @@
     </section>
     <!-- NavBar Ends here -->
 
-    <section class="search-section">
-      <h1>How can we help?</h1>
-      <div class="search-container">
-        <input
-          type="text"
-          id="searchInput"
-          placeholder="Ask a question"
-          oninput="searchFAQs()"
-        />
-        <button class="search-btn" onclick="searchFAQs()" aria-label="Search">
-          <svg width="20" height="20" viewBox="0 0 20 20">
-            <circle
-              cx="9"
-              cy="9"
-              r="7"
-              stroke="#888"
-              stroke-width="2"
-              fill="none"
-            />
-            <line
-              x1="14"
-              y1="14"
-              x2="19"
-              y2="19"
-              stroke="#888"
-              stroke-width="2"
-            />
-          </svg>
-        </button>
-      </div>
-    </section>
-
-<section class="articles">
-  <div class="article" onclick="showCategory('accounts')">
-    <img src="/images/reset-password.jpg" alt="Accounts">
-    <h2>Your Accounts: Opening, Maintenance & Options</h2>
-    <p>Learn how to open, manage, and customise your account to suit your needs.</p>
-  </div>
-  <div class="article" onclick="showCategory('payments')">
-    <img src="/images/mobile-banking.png" alt="Payments">
-    <h2>Payments & Transfers</h2>
-    <p>Find out how to send, receive, and track payments quickly and securely.</p>
-  </div>
-  <div class="article" onclick="showCategory('security')">
-    <img src="/images/security.jpg" alt="Security">
-    <h2>Security & Fraud Protection</h2>
-    <p>Get tips and tools to protect your account and stay safe from scams.</p>
+<section class="search-section">
+  <h1>How can we help?</h1>
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Ask a question" oninput="searchFAQs()">
+    <button class="search-btn" onclick="searchFAQs()" aria-label="Search">
+      <svg width="20" height="20" viewBox="0 0 20 20">
+        <circle cx="9" cy="9" r="7" stroke="#888" stroke-width="2" fill="none"/>
+        <line x1="14" y1="14" x2="19" y2="19" stroke="#888" stroke-width="2"/>
+      </svg>
+    </button>
   </div>
 </section>
 
-    <section class="faq-section" id="faqSection">
-      <button
-        id="backButton"
-        onclick="showAllCategories()"
-        style="display: none"
-      >
-        ← Back to Categories
-      </button>
-      <!-- Accounts FAQs -->
-      <div class="faq-item" data-category="accounts">
-        <h3 onclick="toggleFAQ(this)">How do I reset my password?</h3>
-        <p>
-          You can reset your password by clicking "Forgot Password" on the login
-          screen and following the instructions.
-        </p>
+<div class="faq-header">
+    <h2>Featured Banking Help & Guides</h2>
+  </div>
+<!-- FAQ Categories with Video Buttons -->
+<section class="articles">
+  <div class="article" onclick="showCategory('accounts')">
+    <img src="images/reset-password.jpg" alt="Accounts">
+    <h2>Your Accounts: Opening, Maintenance</h2>
+    <p>Learn how to open, manage, and customise your account to suit your needs.</p>
+    <button class="video-btn" data-video="" aria-haspopup="dialog">Watch-Video</button> 
+  </div>
+  <div class="article" onclick="showCategory('payments')">
+    <img src="images/payments&tranfers2.jpg" alt="Payments">
+    <h2>Payments & Transfers</h2>
+    <p>Find out how to send, receive, and track payments quickly and securely.</p>
+    <button class="video-btn" data-video="" aria-haspopup="dialog">Watch-Video</button> 
+  </div>
+  <div class="article" onclick="showCategory('security')">
+    <img src="images/security.jpg" alt="Security">
+    <h2>Security & Fraud Protection</h2>
+    <p>Get tips and tools to protect your account and stay safe from scams.</p>
+    <button class="video-btn" data-video="" aria-haspopup="dialog">Watch-Video</button> 
+  </div>
+</section>
+
+
+<section class="faq-section" id="faqSection">
+  <button id="backButton" onclick="showAllCategories()" style="display:none;">← Back to Categories</button>
+  <!-- Accounts FAQs -->
+  <div class="faq-item" data-category="accounts">
+    <h3 onclick="toggleFAQ(this)">How do I reset my password?</h3>
+    <p>You can reset your password by clicking "Forgot Password" on the login screen and following the instructions.</p>
+  </div>
+  <div class="faq-item" data-category="accounts">
+    <h3 onclick="toggleFAQ(this)">How do I open an online banking account?</h3>
+    <p>You can open an account by clicking the "Sign In" button on our Home page and following the registration process. You'll need a valid ID, proof of address, and your account information.</p>
+  </div>
+  <div class="faq-item" data-category="accounts">
+    <h3 onclick="toggleFAQ(this)">What are the fees for using this account?</h3>
+    <p>Fees vary by account type. Please refer to our pricing page or contact support for specific details.</p>
+  </div>
+   <div class="faq-item" data-category="accounts">
+    <h3 onclick="toggleFAQ(this)">How do I update my personal details?</h3>
+    <p>You can update your address, phone number, or email by logging in to your account and navigating to Settings > Personal Information, or by visiting your nearest branch with a valid ID.</p>
+  </div>
+   <div class="faq-item" data-category="accounts">
+    <h3 onclick="toggleFAQ(this)">How do I close my account?</h3>
+    <p>To close your account, please contact our customer support team or visit a branch. Make sure all pending transactions are completed and your balance is cleared before submitting your closure request.</p>
+  </div>
+  <!-- Payments FAQs -->
+  <div class="faq-item" data-category="payments">
+    <h3 onclick="toggleFAQ(this)">How do I make an online transfer?</h3>
+    <p>You can transfer funds by logging into your account and selecting "Transfers." Follow the on-screen instructions.</p>
+  </div>
+  <div class="faq-item" data-category="payments">
+    <h3 onclick="toggleFAQ(this)">How can I pay my bills through online banking?</h3>
+    <p>Navigate to the "Payments" section, choose the biller, and enter your account details to complete the payment.</p>
+  </div>
+  <div class="faq-item" data-category="payments">
+    <h3 onclick="toggleFAQ(this)">How do I set up a recurring payment?</h3>
+    <p>Log in to online banking, choose the payee, select the payment frequency (e.g., weekly or monthly), and confirm the schedule. You can manage or cancel recurring payments anytime in your payment settings.</p>
+  </div>
+  <div class="faq-item" data-category="payments">
+    <h3 onclick="toggleFAQ(this)">What is the maximum amount I can transfer online?</h3>
+    <p>Transfer limits vary depending on your account type and security settings. You can view your current limit in Settings > Transfer Limits or by contacting our support team.</p>
+  </div>
+  <div class="faq-item" data-category="payments">
+    <h3 onclick="toggleFAQ(this)">Can I cancel a payment after it’s been made?</h3>
+    <p>Once a payment is processed, it usually can’t be reversed. If it’s still pending, you can cancel it via the “Pending Transactions” page or by calling us immediately.</p>
+  </div>
+  <!-- Security FAQs -->
+  <div class="faq-item" data-category="security">
+    <h3 onclick="toggleFAQ(this)">Is mobile banking secure?</h3>
+    <p>Yes. Our mobile banking app uses encryption and multifactor authentication to keep your information safe.</p>
+  </div>
+  <div class="faq-item" data-category="security">
+    <h3 onclick="toggleFAQ(this)">What should I do if I notice suspicious activity on my account?</h3>
+    <p>Immediately contact our support team and change your password. We'll help you investigate and secure your account.</p>
+  </div>
+  <div class="faq-item" data-category="security">
+    <h3 onclick="toggleFAQ(this)">How do I enable two-factor authentication (2FA)?</h3>
+    <p>You can turn on 2FA in your account security settings. Once enabled, you’ll need to enter a one-time code sent to your phone or email each time you log in.</p>
+  </div>
+  <div class="faq-item" data-category="security">
+    <h3 onclick="toggleFAQ(this)">How do you protect my personal information?</h3>
+    <p>We use advanced encryption, secure servers, and regular security monitoring to protect your personal and financial data.</p>
+  </div>
+  <div class="faq-item" data-category="security">
+    <h3 onclick="toggleFAQ(this)">How can I recognise a phishing email or scam message?</h3>
+    <p>Look for poor grammar, urgent payment requests, or suspicious links. We’ll never ask for your password or PIN via email or text. Report any suspicious messages to our security team immediately.</p>
+  </div>
+</section>
+
+<section class="support-banner">
+  <div class="text">
+    <h2>Talk to an expert</h2>
+    <p>We are here to answer all your questions.</p>
+    <button class="button" id="contactSupportBtn">Contact support</button>
+  </div>
+  <img src="images/support-agent4.png" alt="Support Agent">
+</section>
+
+ <!-- Footer Starts Here -->
+    <section class="footers">
+      <div class="footer">
+        <div class="footer-logo">
+          <img src="images/logo" alt="" />
+          <h1>With Mission</h1>
+          <div class="divider"></div>
+          <p>
+            We are committed to providing a secure and user-friendly banking
+            experience that empowers you to take control of your finances.
+          </p>
+        </div>
+        <div class="footer-inks">
+          <h1>Quick Links</h1>
+          <div class="divider"></div>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Affiliate</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">FAQ's</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-inks">
+          <h1>Quick Links</h1>
+          <div class="divider"></div>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Affiliate</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">FAQ's</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-inks">
+          <h1>Quick Links</h1>
+          <div class="divider"></div>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Affiliate</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">FAQ's</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-inks">
+          <div class="footer-contact">
+            <h1>Contact Us</h1>
+            <div class="divider"></div>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Services</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="faq-item" data-category="accounts">
-        <h3 onclick="toggleFAQ(this)">
-          How do I open an online banking account?
-        </h3>
-        <p>
-          You can open an account by clicking the "Sign In" button on our Home
-          page and following the registration process. You'll need a valid ID,
-          proof of address, and your account information.
-        </p>
-      </div>
-      <div class="faq-item" data-category="accounts">
-        <h3 onclick="toggleFAQ(this)">
-          What are the fees for using this account?
-        </h3>
-        <p>
-          Fees vary by account type. Please refer to our pricing page or contact
-          support for specific details.
-        </p>
-      </div>
-      <div class="faq-item" data-category="accounts">
-        <h3 onclick="toggleFAQ(this)">How do I update my personal details?</h3>
-        <p>
-          You can update your address, phone number, or email by logging in to
-          your account and navigating to Settings > Personal Information, or by
-          visiting your nearest branch with a valid ID.
-        </p>
-      </div>
-      <div class="faq-item" data-category="accounts">
-        <h3 onclick="toggleFAQ(this)">How do I close my account?</h3>
-        <p>
-          To close your account, please contact our customer support team or
-          visit a branch. Make sure all pending transactions are completed and
-          your balance is cleared before submitting your closure request.
-        </p>
-      </div>
-      <!-- Payments FAQs -->
-      <div class="faq-item" data-category="payments">
-        <h3 onclick="toggleFAQ(this)">How do I make an online transfer?</h3>
-        <p>
-          You can transfer funds by logging into your account and selecting
-          "Transfers." Follow the on-screen instructions.
-        </p>
-      </div>
-      <div class="faq-item" data-category="payments">
-        <h3 onclick="toggleFAQ(this)">
-          How can I pay my bills through online banking?
-        </h3>
-        <p>
-          Navigate to the "Payments" section, choose the biller, and enter your
-          account details to complete the payment.
-        </p>
-      </div>
-      <div class="faq-item" data-category="payments">
-        <h3 onclick="toggleFAQ(this)">How do I set up a recurring payment?</h3>
-        <p>
-          Log in to online banking, choose the payee, select the payment
-          frequency (e.g., weekly or monthly), and confirm the schedule. You can
-          manage or cancel recurring payments anytime in your payment settings.
-        </p>
-      </div>
-      <div class="faq-item" data-category="payments">
-        <h3 onclick="toggleFAQ(this)">
-          What is the maximum amount I can transfer online?
-        </h3>
-        <p>
-          Transfer limits vary depending on your account type and security
-          settings. You can view your current limit in Settings > Transfer
-          Limits or by contacting our support team.
-        </p>
-      </div>
-      <div class="faq-item" data-category="payments">
-        <h3 onclick="toggleFAQ(this)">
-          Can I cancel a payment after it’s been made?
-        </h3>
-        <p>
-          Once a payment is processed, it usually can’t be reversed. If it’s
-          still pending, you can cancel it via the “Pending Transactions” page
-          or by calling us immediately.
-        </p>
-      </div>
-      <!-- Security FAQs -->
-      <div class="faq-item" data-category="security">
-        <h3 onclick="toggleFAQ(this)">Is mobile banking secure?</h3>
-        <p>
-          Yes. Our mobile banking app uses encryption and multifactor
-          authentication to keep your information safe.
-        </p>
-      </div>
-      <div class="faq-item" data-category="security">
-        <h3 onclick="toggleFAQ(this)">
-          What should I do if I notice suspicious activity on my account?
-        </h3>
-        <p>
-          Immediately contact our support team and change your password. We'll
-          help you investigate and secure your account.
-        </p>
-      </div>
-      <div class="faq-item" data-category="security">
-        <h3 onclick="toggleFAQ(this)">
-          How do I enable two-factor authentication (2FA)?
-        </h3>
-        <p>
-          You can turn on 2FA in your account security settings. Once enabled,
-          you’ll need to enter a one-time code sent to your phone or email each
-          time you log in.
-        </p>
-      </div>
-      <div class="faq-item" data-category="security">
-        <h3 onclick="toggleFAQ(this)">
-          How do you protect my personal information?
-        </h3>
-        <p>
-          We use advanced encryption, secure servers, and regular security
-          monitoring to protect your personal and financial data.
-        </p>
-      </div>
-      <div class="faq-item" data-category="security">
-        <h3 onclick="toggleFAQ(this)">
-          How can I recognise a phishing email or scam message?
-        </h3>
-        <p>
-          Look for poor grammar, urgent payment requests, or suspicious links.
-          We’ll never ask for your password or PIN via email or text. Report any
-          suspicious messages to our security team immediately.
-        </p>
+      <div class="footer-tag">
+        <div class="divider"></div>
+        <p>copyright reserved by AMT tech group</p>
       </div>
     </section>
+    <!-- footer ends here-->
 
-    <section class="support-banner">
-      <div class="text">
-        <h2>Talk to an expert</h2>
-        <p>We are here to answer all your questions.</p>
-        <button class="button" id="contactSupportBtn">Contact support</button>
-      </div>
-      <img src="/images/support-agent4.png" alt="Support Agent" />
-    </section>
 
-    <script src="faq1.js"></script>
-  </body>
+<script src="faq1.js"></script>
+</body>
 </html>
