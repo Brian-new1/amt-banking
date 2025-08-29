@@ -184,7 +184,7 @@ export function encryptId(id: string) {
 }
 
 export function decryptId(id: string) {
-  return atob(id);
+  return Buffer.from(id, "base64").toString("utf-8");
 }
 
 export const getTransactionStatus = (date: Date) => {

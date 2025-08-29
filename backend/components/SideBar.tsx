@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
 import { is } from "zod/locales";
 import Footer from "./Footer";
+import PlaidLink from "./PlaidLink";
 
 const SideBar = ({ user }: SiderbarProps) => {
   const pathname = usePathname();
@@ -24,7 +25,9 @@ const SideBar = ({ user }: SiderbarProps) => {
             className="w-[24px] h-[24px] xl:w-[34px] xl:h-[34px]"
             priority
           />
-          <h1 className="sidebar-logo text-xl font-semibold">ATM Bank</h1>
+          <h1 className="2xl:text-26 font-ibm-plex-serif text-[26px] font-bold text-black-1 max-xl:hidden text-xl ">
+            ATM Bank
+          </h1>
         </Link>
         {sidebarLinks.map((item) => {
           const isActive =
@@ -33,9 +36,12 @@ const SideBar = ({ user }: SiderbarProps) => {
             <Link
               href={item.route}
               key={item.label}
-              className={cn("sidebar-link", {
-                "bg-gradient-to-r from-[#0179FE] to-[#4893FF] ": isActive,
-              })}
+              className={cn(
+                "flex gap-3 items-center py-1 md:p-3 2xl:p-4 rounded-lg justify-center xl:justify-start",
+                {
+                  "bg-gradient-to-r from-[#0179FE] to-[#4893FF] ": isActive,
+                }
+              )}
             >
               <div className="relative size-6">
                 <Image
@@ -45,13 +51,18 @@ const SideBar = ({ user }: SiderbarProps) => {
                   className={cn({ "brightness-[3] invert-0": isActive })}
                 />
               </div>
-              <p className={cn("sidebar-label", { "!text-white": isActive })}>
+              <p
+                className={cn(
+                  "text-16 font-semibold text-black-2 max-xl:hidden",
+                  { "!text-white": isActive }
+                )}
+              >
                 {item.label}
               </p>
             </Link>
           );
         })}
-        USER
+        <PlaidLink user={user} />
       </nav>
 
       {/* 👇 Footer is now forced to bottom */}

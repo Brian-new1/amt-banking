@@ -5,24 +5,21 @@ import RightSideBar from "@/components/RightSidebar";
 import { email } from "zod";
 import { getLoggedInUser } from "@/lib/actions/user.actions";
 import { getAccount, getAccounts } from "@/lib/actions/bank.actions";
+import RecentTransactions from "@/components/RecentTransactions";
 
 const Home = async ({ searchParams: { id, page } }: SearchParamProps) => {
+  const currentPage = Number(page as string) || 1;
   const loggedIn = await getLoggedInUser();
-  const accounts = await getAccounts({ userId: loggedIn.$ID });
+  const accounts = await getAccounts({ userId: loggedIn.$id });
 
   if (!accounts) return;
 
-  const accountsData = accounts?.Data || [];
+  const accountsData = accounts?.data || [];
 
   const appwriteItemId =
     (id as string) || accountsData[0]?.appwriteItemId || null;
 
   const account = await getAccount({ appwriteItemId });
-
-  console.log({
-    accountsData,
-    account,
-  });
 
   return (
     <section className="home flex flex-row gap-4">
@@ -42,7 +39,13 @@ const Home = async ({ searchParams: { id, page } }: SearchParamProps) => {
             totalCurrentBalance={accounts?.totalCurrentBalance}
           />
         </header>
-        <p className="mt-6 font-medium">RECENT TRANSACTIONS</p>
+
+        <RecentTransactions
+          accounts={accountsData}
+          transactions={account?.transactions}
+          appwriteItemId={appwriteItemId}
+          page={currentPage}
+        />
       </div>
 
       {/* Right sidebar */}

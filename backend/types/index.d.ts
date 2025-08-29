@@ -328,3 +328,21 @@ declare interface getBankProps {
 declare interface getBankByAccountIdProps {
   accountId: string;
 }
+// types/appwrite.d.ts or at the top of your file
+interface AppwriteDocument {
+  $id: string;
+  $createdAt: string;
+  $updatedAt: string;
+  $permissions: string[];
+  [key: string]: any; // Allow any other properties
+}
+
+interface TransactionDocument extends AppwriteDocument {
+  name?: string;
+  amount?: number;
+  channel?: string;
+  category?: string;
+  senderBankId?: string;
+  receiverBankId?: string;
+  // Add other transaction properties you expect
+}
